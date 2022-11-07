@@ -1,0 +1,40 @@
+.bg_utama{
+    height: 100vh;
+    padding-top: 50px;
+    background: linear-gradient(180deg, #3DB6A0 0%, black 100%);
+}
+
+.bg1{
+    border-radius: 30px;
+    background-color: #3DB6A0;
+}
+
+.login_Form{
+    margin: 50px 100px 40px 30px;
+    padding: 10px;
+    background-color: white !important;
+    border-radius: 20px;
+}
+
+.button{
+    width: 140px;
+    background-color: #3DB6A0;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.text_login{
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-left: 18px;
+}
+
+.input_login{
+    width: 80%;
+}
+
+.image{
+    width: 500px;
+    margin: 70px auto;
+}
