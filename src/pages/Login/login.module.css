@@ -1,5 +1,10 @@
+.bg_utama{
+    height: 100vh;
+    padding-top: 50px;
+    background: linear-gradient(180deg, #3DB6A0 0%, black 100%);
+}
+
 .bg1{
-    margin: 50px auto;
     border-radius: 30px;
     background-color: #3DB6A0;
 }
@@ -30,6 +35,6 @@
 }
 
 .image{
-    width: 626px;
-    height: 594px;
+    width: 500px;
+    margin: 70px auto;
 }

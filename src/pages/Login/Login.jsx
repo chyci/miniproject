@@ -6,7 +6,7 @@ import style from './login.module.css'
 
 function Login() {
   return (
-    <div >
+    <div className={style.bg_utama}>
         <Container className={style.bg1}>
             <Row className='justify-content-md-center'>
                 <Col xs={6}>
@@ -24,7 +24,7 @@ function Login() {
                     <Form>
                       <Form.Group className="mb-3 pt-3 ps-3" controlId="formBasicEmail">
                         <Form.Label>Username</Form.Label>
-                        <Form.Control className={style.input_login} type="text" placeholder="Enter Username" />
+                        <Form.Control className={style.input_login} type="text" placeholder="Username" />
                       </Form.Group>
 
                       <Form.Group className="mb-3 ps-3" controlId="formBasicPassword">
@@ -40,13 +40,11 @@ function Login() {
                   </div>
                 </Col>
                 <Col xs={6}>
-                <div>
-                  <img src={PicLogin} alt='Ini Gambar'className={style.image}/>
-                </div>
+                  <img src={PicLogin} alt='Ini Gambar' className={style.image}/>
                 </Col>
             </Row>
         </Container>
-    </div>
+      </div>
   )
 }
 
