@@ -33,7 +33,7 @@ function Register() {
                       </Form.Group>
                       <Form.Group className='text-center mt-5'>
                       <Button className={style.button} type="submit">
-                        Login
+                        Register
                       </Button>
                       </Form.Group>
                   </Form>
