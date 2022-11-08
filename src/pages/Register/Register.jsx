@@ -2,9 +2,9 @@ import React from 'react'
 import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import PicLogin from "../../assets/PicLogin.png"
 import logo from "../../assets/logo.png"
-import style from './login.module.css'
+import style from './register.module.css'
 
-function Login() {
+function Register() {
   return (
     <div className={style.bg_utama}>
         <Container className={style.bg1}>
@@ -20,7 +20,7 @@ function Login() {
                         <p>Teman Keuanganmu</p>
                       </Col>
                     </Row>
-                    <h2 className={style.text_login}>Login</h2>
+                    <h2 className={style.text_login}>Register</h2>
                     <Form>
                       <Form.Group className="mb-3 pt-3 ps-3" controlId="formBasicEmail">
                         <Form.Label>Username</Form.Label>
@@ -33,7 +33,7 @@ function Login() {
                       </Form.Group>
                       <Form.Group className='text-center mt-5'>
                       <Button className={style.button} type="submit">
-                        Login
+                        Register
                       </Button>
                       </Form.Group>
                   </Form>
@@ -48,4 +48,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register
