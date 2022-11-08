@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import picProfil from "../../assets/profil.png";
+import style from "./bodyElement.module.css";
+import NavigationComponent from "../../component/Dashboard/navigationComponent";
+
 
 const BodyElement = () => {
   const [showText, setShowText] = useState(false);
@@ -34,8 +37,8 @@ const BodyElement = () => {
   return (
     <div>
       <Row>
-        <Col sm={4}>
-          <div style={{ backgroundColor: "white" }}>TEST</div>
+        <Col sm={3}>
+          <NavigationComponent/>
         </Col>
         <Col sm={8}>
           <div

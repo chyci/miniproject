@@ -1,0 +1,16 @@
+.logo {
+    margin: 16px;
+    width: 60px;
+}
+
+.search {
+    color: black;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.search:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: black;
+}

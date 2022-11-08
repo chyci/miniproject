@@ -3,6 +3,8 @@ import { Form, Button, Row, Col, Container } from 'react-bootstrap';
 import PicLogin from "../../assets/PicLogin.png"
 import logo from "../../assets/logo.png"
 import style from './register.module.css'
+import { useNavigate, Link } from 'react-router-dom'
+
 
 function Register() {
   return (
@@ -40,7 +42,10 @@ function Register() {
                         Register
                       </Button>
                       </Form.Group>
-                  </Form>
+                    </Form>
+                    <div className={style.direct} >
+                      <p>Already have an account? <Link to="/login"><span>Login</span></Link></p>
+                    </div>
                   </div>
                 </Col>
                 <Col xs={6}>
