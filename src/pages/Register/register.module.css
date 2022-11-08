@@ -1,6 +1,6 @@
 .bg_utama{
     height: 100vh;
-    padding-top: 50px;
+    padding: 2%;
     background: linear-gradient(180deg, #3DB6A0 0%, black 100%);
 }
 
@@ -27,7 +27,7 @@
 .text_login{
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 18px;
+    padding-left: 47px;
 }
 
 .input_login{
