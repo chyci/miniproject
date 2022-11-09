@@ -1,10 +1,13 @@
 .container {
-    padding: 16px;
-    background-color: red;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .button {
-    width: 300px;
+    width: 100%;
     padding: 16px;
     margin-bottom: 16px;
     font-size: 16px;

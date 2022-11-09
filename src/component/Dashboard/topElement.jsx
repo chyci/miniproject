@@ -7,7 +7,7 @@ import style from "./topElement.module.css";
 const TopElement = () => {
   return (
     <div className={style.background}>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex align-items-center justify-content-between">
         <div>
           <img 
             className={style.logo}
@@ -16,13 +16,7 @@ const TopElement = () => {
           />
         </div>
         <div>
-          <Form className="d-flex pt-4">
-            {/* <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />  */}
+          <Form className="d-flex">
             <InputGroup>
               <Form.Control type='search' placeholder='Search'/>
               <Button className={style.search}>
@@ -33,45 +27,11 @@ const TopElement = () => {
             </InputGroup>
           </Form>
         </div>
-        <div>
-          <img
-            src={picProfil}
-            alt="Generic placeholder image"
-            className="img-fluid rounded-circle border border-dark border-3"
-            style={{ width: "50px", margin: "20px 10px 20px 10px" }}
+        <div className={style.profile}>
+          <img src={picProfil} alt="Generic placeholder image" className="img-fluid rounded-circle border border-dark border-3"
           />
         </div>
       </div>
-      {/* <Row> */}
-      {/* <Col>
-          <img
-            src={logo}
-            alt="logo"
-            style={{ padding: "20px 10px 20px 20px", width: "100px" }}
-          />
-        </Col>
-        <Col>
-          <Form className="d-flex p-4">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Col> */}
-      {/* <Col>
-          <div className="d-flex justify-content-end">
-            <img
-              src={picProfil}
-              alt="Generic placeholder image"
-              className="img-fluid rounded-circle border border-dark border-3"
-              style={{ width: "50px", margin: "20px 10px 20px 10px" }}
-            />
-          </div>
-        </Col> */}
-      {/* </Row> */}
     </div>
   );
 };

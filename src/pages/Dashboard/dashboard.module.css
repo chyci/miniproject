@@ -1,6 +1,6 @@
 .background{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-attachment: fixed;
     background: linear-gradient(180deg, #3DB6A0 0%, black 100%);
 }

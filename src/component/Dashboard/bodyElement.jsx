@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button} from "react-bootstrap";
 import picProfil from "../../assets/profil.png";
 import style from "./bodyElement.module.css";
 import NavigationComponent from "../../component/Dashboard/navigationComponent";
+
 
 
 const BodyElement = () => {
@@ -35,67 +36,52 @@ const BodyElement = () => {
   ];
 
   return (
-    <div>
+    <div className={style.container}>
       <Row>
         <Col sm={3}>
           <NavigationComponent/>
         </Col>
-        <Col sm={8}>
-          <div
-            style={{
-              backgroundColor: "#3DB6A0",
-              padding: "5px",
-              borderRadius: "10px",
-            }}
-          >
-            <Row style={{ margin: "5px" }}>
-              <Col style={{ margin: "10px" }}>
+        <Col>
+          <div className={style.content}>
+            <Row>
+              <Col>
                 <div
-                  className="d-flex justify-content-around"
-                  style={{ backgroundColor: "black", borderRadius: "10px" }}
+                  className="d-flex justify-content-around align-items-center"
+                  id={style["profile"]}
                 >
-                  <div
-                    style={{
-                      padding: "20px 10px",
-                      color: "white",
-                    }}
+                  <div className={style.box1}
                   >
-                    <h3 style={{ marginBottom: "20px" }}>User's Account</h3>
+                    <h3>User's Account</h3>
                     <p>
                       “If you don’t know how to care for money, money will stay
                       away from you”
                     </p>
                   </div>
-                  <div
-                    style={{
-                      padding: "30px 20px 20px 20px",
-                    }}
+                  <div className={style.profpic}
                   >
                     <img
                       src={picProfil}
                       alt="Generic placeholder image"
                       className="img-fluid rounded-circle"
-                      style={{ width: "300px" }}
                     />
                   </div>
                 </div>
-                <div style={{ backgroundColor: "white", borderRadius: "10px" }}>
+                <div className={style.recent}>
                   <div
-                    className="d-flex justify-content-around"
-                    style={{ marginTop: "10px" }}
+                    className="d-flex justify-content-between align-items-center"
                   >
-                    <div style={{ marginTop: "10px" }}>
-                      <p style={{ color: "#3DB6A0", fontSize: "30px" }}>
+                    <div className={style.recentTitle}>
+                      <p>
                         Recent Transaction
                       </p>
                     </div>
-                    <div style={{ marginTop: "20px" }}>
+                    <div>
                       <button
                         type="button"
                         className="btn btn-sm rounded-pill"
-                        style={{ backgroundColor: "#3DB6A0", color: "white" }}
+                        id={style["btnMore"]}
                       >
-                        Viewmore
+                        View More
                       </button>
                     </div>
                   </div>
@@ -121,23 +107,22 @@ const BodyElement = () => {
                   </div>
                 </div>
               </Col>
-              <Col
-                style={{
-                  backgroundColor: "white",
-                  padding: "15px",
-                  borderRadius: "10px",
-                }}
-              >
-                <div style={{ margin: "10px" }}>
-                  <p style={{ textDecoration: "underline", fontSize: "25px" }}>
-                    Spent Today
-                  </p>
-                  <p style={{ fontSize: "25px", fontWeight: "bold" }}>
-                    Rp. 50.000
-                  </p>
+              <Col>
+                <div className={style.spent}>
+                  <div className={style.spentHeader}>
+                    <p id={style["title"]}>
+                      Spent Today
+                    </p>
+                    <p id={style["value"]}>
+                      Rp. 50.000
+                    </p>
+                    <p id={style["subTitle"]}>
+                      Monthly Transaction Summary
+                    </p>
+                  </div>
+                  <div></div>
+                  <div></div>
                 </div>
-                <div></div>
-                <div></div>
               </Col>
             </Row>
           </div>

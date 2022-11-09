@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className={style.background}>
       <TopElement />
-      <BodyElement />
+      <BodyElement/>
     </div>
   );
 };

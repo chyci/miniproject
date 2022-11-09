@@ -1,5 +1,8 @@
+.background {
+    padding: 16px;
+}
+
 .logo {
-    margin: 16px;
     width: 60px;
 }
 
@@ -13,4 +16,8 @@
     cursor: pointer;
     background-color: #FFFFFF;
     color: black;
+}
+
+.profile {
+    width: 50px;
 }
