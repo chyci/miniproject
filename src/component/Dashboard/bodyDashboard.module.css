@@ -1,0 +1,102 @@
+.container {
+    padding: 16px;
+}
+
+.content {
+    background-color: #3DB6A0;
+    padding: 16px ;
+    border-radius: 10px ;
+    width: 100%;
+}
+
+#profile{
+    padding: 16px;
+    background: black;
+    border-radius: 10px;
+}
+
+.box1 {
+    color: #FFFFFF;
+}
+
+.box1 p {
+    margin-top: 16px;
+}
+
+.profpic {
+    width: 30%;
+}
+
+.recent {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.recentTitle {
+    color: #3DB6A0; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.recentTitle p {
+    margin: 0;
+}
+
+#btnMore {
+    background-color: #3DB6A0; 
+    color: #FFFFFF;
+}
+
+.spent {
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+#title {
+    font-size: 20px;
+}
+
+#value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#subTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #3DB6A0;
+}
+
+.card {
+    padding: 16px;
+    margin-top: 8px;
+    background-color: #3DB6A0;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+#month {
+    font-size: 20px;
+    line-height: 10px;
+}
+
+#desc {
+    font-size: 16px;
+    text-align: right;
+    line-height: 10px;
+
+}
+
+#monthValue {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 10px;
+
+}
+

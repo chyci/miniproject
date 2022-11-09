@@ -1,6 +1,6 @@
 .bg_utama{
     height: 100vh;
-    padding-top: 50px;
+    padding: 2%;
     background: linear-gradient(180deg, #3DB6A0 0%, black 100%);
 }
 
@@ -21,13 +21,13 @@
     background-color: #3DB6A0;
     border: none;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 }
 
 .text_login{
     font-weight: bold;
     margin-bottom: 0px;
-    padding-left: 18px;
+    padding-left: 47px;
 }
 
 .input_login{
@@ -37,4 +37,14 @@
 .image{
     width: 500px;
     margin: 70px auto;
+}
+
+.direct{
+    font-size: 14px;
+    text-align: center;
+}
+
+.direct span{
+    font-weight: bold;
+    color: #3DB6A0;
 }
