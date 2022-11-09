@@ -33,9 +33,56 @@ const BodyDashboard = () => {
       date: "01 August 2022",
       value: "Rp. 36.000",
     },
+    {
+      name: "Food & Drinks",
+      date: "03 August 2022",
+      value: "Rp. 100.000",
+    },
+    {
+      name: "Spotify Subscription",
+      date: "01 August 2022",
+      value: "Rp. 36.000",
+    },
+    {
+      name: "Taxi Trips",
+      date: "04 August 2022",
+      value: "Rp. 50.000",
+    },
+    {
+      name: "Food & Drinks",
+      date: "03 August 2022",
+      value: "Rp. 100.000",
+    },
+    {
+      name: "Spotify Subscription",
+      date: "01 August 2022",
+      value: "Rp. 36.000",
+    },
+    {
+      name: "Food & Drinks",
+      date: "03 August 2022",
+      value: "Rp. 100.000",
+    },
+    {
+      name: "Spotify Subscription",
+      date: "01 August 2022",
+      value: "Rp. 36.000",
+    }
   ];
 
   const dataSummary = [
+    {
+      month: "This Month",
+      value: "Rp. 300.000",
+    },
+    {
+      month: "July",
+      value: "Rp. 763.000",
+    },
+    {
+      month: "June",
+      value: "Rp. 975.000",
+    },
     {
       month: "This Month",
       value: "Rp. 300.000",
@@ -60,20 +107,15 @@ const BodyDashboard = () => {
           <div className={style.content}>
             <Row>
               <Col>
-                <div
-                  className="d-flex justify-content-around align-items-center"
-                  id={style["profile"]}
-                >
-                  <div className={style.box1}
-                  >
+                <div className="d-flex justify-content-around align-items-center" id={style["profile"]}>
+                  <div className={style.box1}>
                     <h3>User's Account</h3>
                     <p>
                       “If you don’t know how to care for money, money will stay
                       away from you”
                     </p>
                   </div>
-                  <div className={style.profpic}
-                  >
+                  <div className={style.profpic}>
                     <img
                       src={picProfil}
                       alt="Generic placeholder image"
@@ -82,9 +124,7 @@ const BodyDashboard = () => {
                   </div>
                 </div>
                 <div className={style.recent}>
-                  <div
-                    className="d-flex justify-content-between align-items-center"
-                  >
+                  <div className="d-flex justify-content-between align-items-center">
                     <div className={style.recentTitle}>
                       <p>
                         Recent Transaction
@@ -100,7 +140,7 @@ const BodyDashboard = () => {
                       </button>
                     </div>
                   </div>
-                  <div style={{ padding: "10px" }} className="table-responsive">
+                  <div id={style["recentTable"]} style={{ padding: "10px" }} className="table-responsive">
                     {dataTable.map((data, index) => {
                       return (
                         <table
@@ -135,7 +175,7 @@ const BodyDashboard = () => {
                       Monthly Transaction Summary
                     </p>
                   </div>
-                  <div>
+                  <div className={style.summary}>
                     {dataSummary.map((data, index)=> {
                       return(
                         <div className={style.card}>
