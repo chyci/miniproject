@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Form, Button, InputGroup } from "react-bootstrap";
-import picProfil from "../../assets/profil.png";
-import logo from "../../assets/logo.png";
+import picProfil from "../assets/profil.png";
+import logo from "../assets/logo.png";
 import style from "./topElement.module.css";
 
 const TopElement = () => {

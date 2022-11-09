@@ -1,4 +1,5 @@
 import { Button, Stack } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import style from "./navigationComponent.module.css";
 
 const NavigationComponent = () => {
@@ -6,18 +7,21 @@ const NavigationComponent = () => {
         <div className={style.container}>
             {/* <div className={style.container}> */}
                 <div>
+                    <Link to="/dashboard">
                     <Button className={style.button}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
                         </svg>
                         Dashboard
                     </Button>
+                    </Link>
                     <Button className={style.button}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
                             <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
                         </svg>
                         Transaction
                     </Button>
+                    <Link to="/about">
                     <Button className={style.button}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -25,6 +29,7 @@ const NavigationComponent = () => {
                         </svg>
                         About
                     </Button>
+                    </Link>
                 </div>
                 
                 <div>

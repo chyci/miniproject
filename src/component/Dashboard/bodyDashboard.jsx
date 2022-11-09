@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Row, Col, Button} from "react-bootstrap";
 import picProfil from "../../assets/profil.png";
-import style from "./bodyElement.module.css";
-import NavigationComponent from "../../component/Dashboard/navigationComponent";
+import style from "./bodyDashboard.module.css";
+import NavigationComponent from "../navigationComponent.jsx";
 
 
 
-const BodyElement = () => {
+const BodyDashboard = () => {
   const [showText, setShowText] = useState(false);
   const handleShow = () => {
     setShowText(true);
@@ -32,6 +32,21 @@ const BodyElement = () => {
       name: "Spotify Subscription",
       date: "01 August 2022",
       value: "Rp. 36.000",
+    },
+  ];
+
+  const dataSummary = [
+    {
+      month: "This Month",
+      value: "Rp. 300.000",
+    },
+    {
+      month: "July",
+      value: "Rp. 763.000",
+    },
+    {
+      month: "June",
+      value: "Rp. 975.000",
     },
   ];
 
@@ -109,7 +124,7 @@ const BodyElement = () => {
               </Col>
               <Col>
                 <div className={style.spent}>
-                  <div className={style.spentHeader}>
+                  <div>
                     <p id={style["title"]}>
                       Spent Today
                     </p>
@@ -120,8 +135,17 @@ const BodyElement = () => {
                       Monthly Transaction Summary
                     </p>
                   </div>
-                  <div></div>
-                  <div></div>
+                  <div>
+                    {dataSummary.map((data, index)=> {
+                      return(
+                        <div className={style.card}>
+                          <p id={style["month"]}>{data.month}</p>
+                          <p id={style["desc"]}>Spending Total</p>
+                          <p id={style["monthValue"]}>{data.value}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -131,4 +155,4 @@ const BodyElement = () => {
     </div>
   );
 };
-export default BodyElement;
+export default BodyDashboard;
