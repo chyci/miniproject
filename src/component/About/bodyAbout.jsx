@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Button} from "react-bootstrap";
-import picProfil from "../../assets/profil.png";
+import { Row, Col} from "react-bootstrap";
 import author from "../../assets/author.png"
 import style from "./bodyAbout.module.css";
 import NavigationComponent from "../navigationComponent.jsx";
@@ -18,7 +17,7 @@ const BodyElement = () => {
           <div className={style.content}>
             <Row>
               <Col>
-                <div className={style.spent}>
+                <div className={style.aboutApp}>
                   <div>
                   <h3 id={style["title"]}>
                       About
@@ -37,26 +36,22 @@ const BodyElement = () => {
                 </div>
               </Col>
               <Col>
-                <div
-                  id={style["profile"]}
-                >
-                  
-                </div>
-                <div className={style.recent}>
-                  <div>  
-                    <h3 id={style["title"]}>
-                      About
-                    </h3>
-                    <p id={style["subTitle"]}>
-                      UANKU
-                    </p>
-                    <p id={style["paragraph"]}>
-                    My name is Chycik Ayu Winata, a 5th semester informatics student who is taking MBKM SIB batch-3 at Alterra. I made this website to fulfill my mini project assignment.
-                    <br/><br/>
-                    I created a web about financial records based on my own experience as a boarding house student who has managed his own money for daily life and also based on complaints from my friends whose money has run out somewhere.
-                    </p>
+                  <img className={style.profile} src={author} alt="author picture"/>
+                  <div className={style.aboutAuthor}>
+                    <div>
+                      <h3 id={style["title"]}>
+                        About
+                      </h3>
+                      <p id={style["subTitle"]}>
+                        Developer
+                      </p>
+                      <p id={style["paragraph"]}>
+                      My name is Chycik Ayu Winata, a 5th semester informatics student who is taking MBKM SIB batch-3 at Alterra. I made this website to fulfill my mini project assignment.
+                      <br/><br/>
+                      I created a web about financial records based on my own experience as a boarding house student who has managed his own money for daily life and also based on complaints from my friends whose money has run out somewhere.
+                      </p>
+                    </div>
                   </div>
-                </div>
               </Col>
             </Row>
           </div>
