@@ -21,7 +21,7 @@
     background-color: #3DB6A0;
     border: none;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 }
 
 .text_login{
@@ -37,4 +37,14 @@
 .image{
     width: 500px;
     margin: 70px auto;
+}
+
+.direct{
+    font-size: 14px;
+    text-align: center;
+}
+
+.direct span{
+    font-weight: bold;
+    color: #3DB6A0;
 }
