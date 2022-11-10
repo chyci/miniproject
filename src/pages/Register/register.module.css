@@ -48,3 +48,39 @@
     font-weight: bold;
     color: #3DB6A0;
 }
+
+.formGroup{
+    position: relative;
+    margin-bottom: 1.7rem;
+    height: 48px;
+}
+
+.iconPass{
+    position: absolute;
+    margin-top: -2rem;
+    cursor: pointer;
+    left: 470px;
+}
+
+/* .formGroupConfirm{
+    position: relative;
+    margin-bottom: 1.7rem;
+    height: 48px;
+}
+.iconConfirmPass{
+    position: absolute;
+    margin-top: -2rem;
+    cursor: pointer;
+    left: 470px;
+} */
+
+/* .inputElement{
+    display: flex;
+}
+
+#fieldPass{
+    padding: 0.5rem 1rem;
+    padding-right: 2.8rem;
+}
+
+.eyeButton */

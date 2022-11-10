@@ -2,15 +2,28 @@
     padding: 16px;
 }
 
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
 .content {
     background-color: #3DB6A0;
     padding: 16px ;
     border-radius: 10px ;
-    width: 100%;
+    height: 86vh;
+}
+
+.content .row .col {
+    margin-right: 16px;
 }
 
 .aboutApp {
-    height: 100%;
+    height: 82vh;
     background: #FFFFFF;
     border-radius: 10px;
     padding: 16px;
@@ -18,10 +31,13 @@
 
 .profile{
     width: 100%;
+    height: 40vh;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .aboutAuthor {
+    height: 40vh;
     background-color: #FFFFFF;
     border-radius: 10px;
     padding: 16px;
@@ -39,6 +55,14 @@
     margin-top: 20px;
 }
 
-#paragraph {
+#paragraph1 {
+    max-height: 67vh;
     text-align: justify;
+    overflow: auto;
+}
+
+#paragraph2 {
+    max-height:25vh;
+    text-align: justify;
+    overflow: auto;
 }

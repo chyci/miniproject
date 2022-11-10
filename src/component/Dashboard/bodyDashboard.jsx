@@ -33,56 +33,9 @@ const BodyDashboard = () => {
       date: "01 August 2022",
       value: "Rp. 36.000",
     },
-    {
-      name: "Food & Drinks",
-      date: "03 August 2022",
-      value: "Rp. 100.000",
-    },
-    {
-      name: "Spotify Subscription",
-      date: "01 August 2022",
-      value: "Rp. 36.000",
-    },
-    {
-      name: "Taxi Trips",
-      date: "04 August 2022",
-      value: "Rp. 50.000",
-    },
-    {
-      name: "Food & Drinks",
-      date: "03 August 2022",
-      value: "Rp. 100.000",
-    },
-    {
-      name: "Spotify Subscription",
-      date: "01 August 2022",
-      value: "Rp. 36.000",
-    },
-    {
-      name: "Food & Drinks",
-      date: "03 August 2022",
-      value: "Rp. 100.000",
-    },
-    {
-      name: "Spotify Subscription",
-      date: "01 August 2022",
-      value: "Rp. 36.000",
-    }
   ];
 
   const dataSummary = [
-    {
-      month: "This Month",
-      value: "Rp. 300.000",
-    },
-    {
-      month: "July",
-      value: "Rp. 763.000",
-    },
-    {
-      month: "June",
-      value: "Rp. 975.000",
-    },
     {
       month: "This Month",
       value: "Rp. 300.000",
@@ -99,14 +52,14 @@ const BodyDashboard = () => {
 
   return (
     <div className={style.container}>
-      <Row>
-        <Col sm={3}>
+      <Row className={style.row}>
+        <Col sm={2}>
           <NavigationComponent/>
         </Col>
         <Col>
           <div className={style.content}>
-            <Row>
-              <Col>
+            <Row className={style.row}>
+              <Col className={style.col}>
                 <div className="d-flex justify-content-around align-items-center" id={style["profile"]}>
                   <div className={style.box1}>
                     <h3>User's Account</h3>
@@ -116,11 +69,7 @@ const BodyDashboard = () => {
                     </p>
                   </div>
                   <div className={style.profpic}>
-                    <img
-                      src={picProfil}
-                      alt="Generic placeholder image"
-                      className="img-fluid rounded-circle"
-                    />
+                    <img src={picProfil} alt="Generic placeholder image" className="img-fluid rounded-circle"/>
                   </div>
                 </div>
                 <div className={style.recent}>
