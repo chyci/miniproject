@@ -167,14 +167,14 @@ const BodyTransactions = () => {
   
   return (
     <div className={style.container}>
-      <Row className={style.row}>
-        <Col sm={2}>
+      <Row>
+        <Col sm={3}>
           <NavigationComponent />
         </Col>
-        <Col className={style.col}>
+        <Col>
           <div className={style.content}>
-            <Row className={style.row}>
-              <Col className={style.col}>
+            <Row>
+              <Col>
                 <div className={style.recent}>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className={style.recentTitle}>
@@ -196,7 +196,7 @@ const BodyTransactions = () => {
                               <td className="col-4">{data.date}</td>
                               <td className="col-4">{data.price}</td>
                               <td>
-                              <Button className={style.edit} onClick={handleShow}>
+                              <Button className={style.edit} onClick={handleShow} data-bs-target={data.id}>
                                 <span className={style.editi}>
                                   <AiOutlineEdit/>
                                 </span>
@@ -209,7 +209,7 @@ const BodyTransactions = () => {
                                 </Modal.Header>
                                 <Modal.Body>
                                     <Form>
-                                    <Form.Group controlId="formGroupName">
+                                    <Form.Group className="mb-3" controlId="formGroupName">
                                       <Form.Label>Transaction Name :</Form.Label>
                                       <Form.Control
                                         type="text"
@@ -218,6 +218,7 @@ const BodyTransactions = () => {
                                         />
                                     </Form.Group>
                                     <Form.Group
+                                      className="mb-3"
                                       controlId="formGroupDate"
                                     >
                                       <Form.Label>Date</Form.Label>
@@ -228,6 +229,7 @@ const BodyTransactions = () => {
                                         />
                                     </Form.Group>
                                     <Form.Group
+                                      className="mb-3"
                                       controlId="formGroupPassword"
                                     >
                                       <Form.Label>Price</Form.Label>
@@ -290,7 +292,7 @@ const BodyTransactions = () => {
                   <div>
                     <p id={style["subTitle"]}>Transaction Input</p>
                     <Form>
-                      <Form.Group  controlId="formGroupEmail">
+                      <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Transaction Name :</Form.Label>
                         <Form.Control
                           type="text"
@@ -301,6 +303,7 @@ const BodyTransactions = () => {
                         />
                       </Form.Group>
                       <Form.Group
+                        className="mb-3"
                         controlId="formGroupPassword"
                       >
                         <Form.Label>Date</Form.Label>
@@ -313,6 +316,7 @@ const BodyTransactions = () => {
                         />
                       </Form.Group>
                       <Form.Group
+                        className="mb-3"
                         controlId="formGroupPassword"
                       >
                         <Form.Label>Price</Form.Label>

@@ -2,16 +2,31 @@
     padding: 16px;
 }
 
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
 .content {
     background-color: #3DB6A0;
     padding: 16px ;
     border-radius: 10px ;
     width: 100%;
+    height: 82vh;
+}
+
+.content .row .col {
+    margin-right: 16px;
 }
 
 #imageTrans{
     margin-top: 16px;
     margin-bottom: 16px;
+    height: 30vh;
 }
 
 .profpic {
@@ -23,6 +38,7 @@
     border-radius: 10px;
     padding: 16px;
     margin-top: 16px;
+    height: 75vh;
 }
 
 .recentTitle {
@@ -41,7 +57,7 @@
 }
 
 .spent {
-    height: 50%;
+    height: 43vh;
     background: #FFFFFF;
     border-radius: 10px;
     padding: 16px;
@@ -52,6 +68,7 @@
     font-weight: bold;
     text-align: start;
     color: #3DB6A0;
+    margin: 0;
 }
 
 .card {
@@ -74,3 +91,4 @@
 .editi {
     color: #000;
 }
+
