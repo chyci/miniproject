@@ -5,8 +5,9 @@
 }
 
 .bg1{
-    border-radius: 30px;
+    border-radius: 34px;
     background-color: #3DB6A0;
+    height: 95vh;
 }
 
 .login_Form{

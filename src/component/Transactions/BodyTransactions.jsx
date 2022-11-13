@@ -204,7 +204,7 @@ const BodyTransactions = () => {
                               <Modal show={show} onHide={handleClose}>
                                 <Modal.Header closeButton>
                                   <Modal.Title id={style["subTitle"]}>
-                                    Transaction Input
+                                    Transaction Edit
                                   </Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
